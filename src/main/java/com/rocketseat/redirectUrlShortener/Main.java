@@ -1,8 +1,7 @@
-package com.rocketseat.redirectUrlShortner;
+package com.rocketseat.redirectUrlShortener;
 
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestHandler;
-
 import java.util.Map;
 
 public class Main implements RequestHandler<Map<String, Object>, Map<String, String>> {
