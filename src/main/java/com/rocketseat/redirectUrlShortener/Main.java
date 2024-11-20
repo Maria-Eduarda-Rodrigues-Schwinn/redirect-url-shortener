@@ -52,7 +52,7 @@ public class Main implements RequestHandler<Map<String, Object>, Map<String, Obj
         Map<String, Object> response = new HashMap<>();
 
         if (currentTimeInSeconds > urlData.getExpirationTime()) {
-            response.put("satusCode", 410);
+            response.put("statusCode", 410);
             response.put("body", "This URL has expired");
 
             return response;
